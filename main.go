@@ -77,15 +77,6 @@ func campaignHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 /**
-* Problem:
-* A campaign gets created
-* Two clients create an ad decision at the same time
-* One will fail, one will succeed
-* 
-* Impression handler is not called for the first one until after the first ad decision call
-*/
-
-/**
 * Creates an ad decision
 */
 func adDecisionHandler(w http.ResponseWriter, r *http.Request) {
